@@ -24,31 +24,55 @@ body{
        padding-right: 40px;
        text-decoration: none;
         color:  @ebony-clay;
- 
+
+      
       
    
 }
 }
-@media @mobile  {
-  
+@media @phone  {
+   
+   *{
+      width:max-width;
+      padding:1;
+      margin: 1;
+      font-size: 20px;
+   }
+
+    .navbar h1 {
+     
+      font-size: 48px;
+    }
+    nav a  {
+      font-size: 19px!important;
+      padding-bottom: 20px!important;
+      padding-right: 10px!important;
+      width: 100% !important;
+  }
+    }
+ 
+
+   
     
-         h1 {
-         font-size:43px;
-         padding-right:2px;
-         nav{ 
+        .navbar nav{ 
             width:max-width ;
             height:auto;
             padding:1;
             margin:1;
 
-             nav a {
-             font-size: 10px;
-             padding-bottom: 20px;
-             padding-left: 20px;
-           }
-        }
+        
 
     }
 
-    }
- 
+    
+      .flash {
+      .keyframes(fade-in;{
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+      });
+  
+    .animation(fade-in 0.5s linear infinite alternate)
+  
+  }
+  
+
