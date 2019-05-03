@@ -160,13 +160,24 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.btn button {
+button {
   border-radius: 8px;
   color: white;
   background-color: black;
   width: 90px;
   height: 40px;
   font-weight: bolder;
+}
+@media (max-width:500px) {
+  .btn button {
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    width: 386px;
+    height: 57px;
+    font-weight: bolder;
+    padding-bottom: 2px;
+  }
 }
 body {
   max-width: 960px;
@@ -191,6 +202,23 @@ body a {
   text-decoration: none;
   color: #23293B;
 }
+@media (max-width:500px) {
+  h1 {
+    font-size: 43px;
+    padding-right: 2px;
+  }
+  h1 nav {
+    width: max-width;
+    height: auto;
+    padding: 1;
+    margin: 1;
+  }
+  h1 nav nav a {
+    font-size: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -200,6 +228,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:500px) {
+  footer {
+    padding-top: 5px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -264,15 +297,11 @@ img {
     width: 100%;
     margin: 0;
   }
-  body body h1 {
-    font-size: 40px;
-    padding-right: 4px;
-  }
-  body body h1 .container .home {
+  .container .home {
     display: flex;
     flex-direction: row;
   }
-  body body h1 .container .home .space-images {
+  .container .home .space-images {
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -299,9 +328,8 @@ img {
     max-width: 499px;
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
-    margin: 0;
-    border: 0;
+    padding: 1px;
+    margin: 1px;
   }
 }
 @media (max-width: 500px) {
@@ -312,6 +340,7 @@ img {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
-    height: auto;
+    height: 40%;
+    padding-right: 37px;
   }
 }
